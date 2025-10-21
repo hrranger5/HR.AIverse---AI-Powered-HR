@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HR.AIverse - AI Powered HR Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#0b1a2f', // Dark Navy Blue from logo bg
+              secondary: '#1d314a', // Lighter navy for secondary sections
+              accent: {
+                light: '#64ffda',
+                DEFAULT: '#00c6d7', // Bright Cyan from logo
+                dark: '#00a8b5',
+              },
+              neutral: {
+                100: '#e0e6f1',
+                200: '#c8d4e5',
+                300: '#a6b8d1',
+                400: '#879cb8',
+                500: '#697f9e',
+                600: '#4c6282',
+                700: '#344966',
+                800: '#1d314a',
+                900: '#0b1a2f',
+              }
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-primary text-neutral-300">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
